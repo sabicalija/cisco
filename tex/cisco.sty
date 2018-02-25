@@ -1,0 +1,431 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{icons}[2018/02/07 Tikz cisco icons]
+\RequirePackage{ifthen}
+\PackageInfo{cisco}{
+    Available icons:
+      - 100baset_hub
+      - 10700
+      - 10GE_FCoE
+      - 15200
+      - 3174_desktop
+      - 3200_mobile_access_router
+      - 3x74_floor
+      - 6700_series
+      - 7500ars_7513
+      - access_gateway
+      - accesspoint
+      - ace
+      - ACS
+      - adm
+      - androgenous_person
+      - antenna
+      - asic_processor
+      - ASR_1000_Series
+      - ata
+      - atm_3800
+      - atm_fast_gigabit_etherswitch
+      - atm_router
+      - atm_switch
+      - atm_tag_switch_router
+      - avs
+      - AXP
+      - bbfw
+      - bbfw_media
+      - bbsm
+      - branch_office
+      - breakout_box
+      - bridge
+      - broadband_router
+      - bts_10200
+      - cable_modem
+      - callmanager
+      - car_1
+      - car
+      - carrier_routing_system
+      - cddi-fddi
+      - cdm
+      - cellular_phone
+      - centri_firewall
+      - cisco_1000
+      - cisco_asa_5500
+      - cisco_ca
+      - cisco_file_engine
+      - cisco_hub
+      - ciscosecurity
+      - cisco_unified_presence_server
+      - cisco_unityexpress
+      - ciscoworks
+      - class_4_5_switch
+      - cloud
+      - communications_server
+      - contact_center
+      - content_engine_cache_director
+      - content_service_router
+      - content_service_switch_1100
+      - content_switch
+      - content_switch_module
+      - content_transformation_engine_cte
+      - convert
+      - cs-mars
+      - csm-s
+      - csu_dsu
+      - CUBE
+      - detector
+      - director-class_fibre_channel_director
+      - directory_server
+      - diskette
+      - distributed_director
+      - dot-dot
+      - dpt
+      - dslam
+      - dual_mode_ap
+      - dwdm_filter
+      - end_office
+      - fax
+      - fc_storage
+      - fddi_ring
+      - fibre_channel_disk_subsystem
+      - fibre_channel_fabric_switch
+      - file_cabinet
+      - file_server
+      - fileserver
+      - firewall
+      - firewall_service_module_fwsm
+      - front_end_processor
+      - gatekeeper
+      - general_applicance
+      - generic_building
+      - generic_gateway
+      - generic_processor
+      - generic_softswitch
+      - gigabit_switch_atm_tag_router
+      - government_building
+      - Ground_terminal
+      - guard
+      - h
+      - handheld
+      - hootphone
+      - host
+      - hp_mini
+      - hub
+      - iad_router
+      - ibm_mainframe
+      - ibm_mini_as400
+      - ibm_tower
+      - icm
+      - ics
+      - intelliswitch_stack
+      - internet_streamer
+      - ios_firewall
+      - ios_slb
+      - ip_communicator
+      - ip_dsl
+      - ip
+      - ip_phone
+      - iptc
+      - ip_telephony_router
+      - iptv_content_manager
+      - iptv_server
+      - iscsi_router
+      - isdn_switch
+      - itp
+      - jbod
+      - key
+      - keys
+      - lan_to_lan
+      - laptop
+      - layer_2_remote_switch
+      - layer_3_switch
+      - lightweight_ap
+      - localdirector
+      - lock
+      - longreach_cpe
+      - macintosh
+      - mac_woman
+      - man_woman
+      - mas_gateway
+      - mau
+      - mcu
+      - mdu
+      - me_1100
+      - Mediator
+      - meetingplace
+      - mesh_ap
+      - metro_1500
+      - mgx_8000_multiservice_switch
+      - microphone
+      - microwebserver
+      - mini_vax
+      - mobile_access_ip_phone
+      - mobile_access_router
+      - mobile_streamer
+      - modem
+      - moh_server
+      - MSE
+      - mulitswitch_device
+      - multi-fabric_server_switch
+      - multilayer_remote_switch
+      - mux
+      - MXE
+      - nac_appliance
+      - NCE
+      - NCE_router
+      - netflow_router
+      - netranger
+      - netsonar
+      - network_management
+      - Nexus_1000
+      - Nexus_2000
+      - Nexus_5000
+      - Nexus_7000
+      - octel
+      - ons15500
+      - optical_amplifier
+      - optical_services_router
+      - optical_transport
+      - pad
+      - pad_x
+      - page_icon
+      - pbx
+      - pbx_switch
+      - pc_adapter_card
+      - pc
+      - pc_man
+      - pc_routercard
+      - pc_software
+      - pc_video
+      - pda
+      - phone
+      - phone_fax
+      - pix_firewall
+      - pmc
+      - printer
+      - programmable_switch
+      - protocol_translator
+      - pxf
+      - radio_tower
+      - ratemux
+      - relational_database
+      - rename
+      - repeater
+      - RF_modem
+      - router
+      - router_firewall
+      - routerin_building
+      - router_with_silicon_switch
+      - route_switch_processor
+      - rpsrps
+      - running_man
+      - safeharbor_icon
+      - sattelite_dish
+      - sattelite
+      - scanner
+      - server_switch
+      - server_with_router
+      - service_control
+      - Service_Module
+      - Service_router
+      - Services
+      - Set_top_box
+      - simulitlayer_switch
+      - sip_proxy_werver
+      - sitting_woman
+      - small_business
+      - small_hub
+      - softphone
+      - softswitch_pgw_mgc
+      - software_based_server
+      - Space_router
+      - speaker
+      - ssc
+      - ssl_terminator
+      - standard_host
+      - standing_man
+      - standing_woman
+      - stb
+      - storage_router
+      - storage_server
+      - stp
+      - streamer
+      - sun_workstation
+      - supercomputer
+      - svx
+      - system_controller
+      - tablet
+      - tape_array
+      - tdm_router
+      - telecommuter_house
+      - telecommuter_house_pc
+      - telecommuter_icon
+      - terminal
+      - token
+      - TP_MCU
+      - transpath
+      - truck
+      - turret
+      - tv
+      - ubr910
+      - umg_series
+      - unity_server
+      - universal_gateway
+      - university
+      - upc
+      - ups
+      - vault
+      - video_camera
+      - vip
+      - virtual_layer_switch
+      - virtual_switch_controller_vsc3000
+      - voice_atm_switch
+      - voice_commserver
+      - voice_router
+      - voice_switch
+      - vpn_concentrator
+      - vpn_gateway
+      - VSD
+      - VSS
+      - wae
+      - wavelength_router
+      - web_browser
+      - web_cluster
+      - wi-fi_tag
+      - wireless_bridge
+      - wireless
+      - wireless_location_appliance
+      - wireless_router
+      - wireless_transport
+      - wism
+      - wlan_controller
+      - workgroup_director
+      - workgroup_switch
+      - workstation
+      - www_server
+}
+
+\definecolor{ciscoblue}{RGB}{8,123,187}
+\definecolor{ciscowhite}{RGB}{255,255,255}
+\definecolor{ciscoblack}{RGB}{0,0,0}
+
+
+% Examples:
+%
+% \cisco{3x74_floor}{fill=tw-blue}{}{draw=tw-gray}{0.003}{0}{0}
+% \cisco{10GE_FCoE}{fill=tw-blue}{}{tw-gray!80}{0.003}{1}{0}
+% \cisco{router}{fill=tw-blue}{}{tw-gray!80}{0.003}{2}{0}
+
+\newcommand\ciscoiconpath[6]{ % name, [icon, scale, x, y]
+    \ifthenelse{\equal{#1}{#2}}{
+        \begin{scope}[shift={(#4,#5)}]
+            \begin{scope}[yscale=#3,xscale=#3]
+                #6
+            \end{scope}
+        \end{scope}
+    }{% else 
+    }
+}
+
+\newcommand\cisco[7]{ % icon, color, line color, accent color, scale, x, y
+
+    \def\ciscostyle{line width=4cm}
+
+    %                  #1      #2  #3  #4  #5   #6
+    \ciscoiconpath{3x74_floor}{#1}{#5}{#6}{#7}{
+        \path[fill=ciscoblue, #2] (50.0938,21.1133) -- (37.5938,3.6133) -- (300.0980,3.6133) -- (292.5980,21.1133) -- (50.0938,21.1133);
+        \path[fill=ciscoblue, #2] (300.0980,3.6133) -- (316.3480,21.1133) -- (292.5980,21.1133) -- (300.0980,3.6133);
+        \path[fill=ciscoblue, #2] (71.0781,21.4805) -- (319.9611,21.4805) -- (319.9611,266.6055) -- (71.0781,266.6055) -- (71.0781,21.4805) -- cycle;
+        \path[fill=ciscoblue, #2] (319.9610,21.4805) -- (369.1020,70.6211) -- (369.1020,315.7540) -- (53.9688,315.7540) -- (4.8281,266.6050) -- (319.9610,266.6050) -- (319.9610,21.4805);
+        \path[draw=ciscowhite,#3] (300.0980,3.6133) -- (316.3480,21.1133) -- (292.5980,21.1133) -- (300.0980,3.6133) -- cycle;
+        \path[draw=ciscowhite,#3] (50.0938,21.1133) -- (37.5938,3.6133) -- (300.0980,3.6133) -- (292.5980,21.1133) -- (50.0938,21.1133) -- cycle;
+        \path[draw=ciscowhite,#3] (319.9610,266.6050) -- (71.0781,266.6050) -- (71.0781,21.4805) -- (319.9610,21.4805);
+        \path[draw=ciscowhite,#3] (319.9610,21.4805) -- (369.1020,70.6211) -- (369.1020,315.7540) -- (53.9688,315.7540) -- (4.8281,266.6050) -- (319.9610,266.6050) -- (319.9610,21.4805) -- cycle;
+        \path[draw=ciscowhite,#3] (319.9610,266.6050) -- (369.1020,315.7540);
+        \path[draw=ciscowhite,#3] (216.0740,228.6170) -- (259.8240,228.6170);
+        \path[draw=ciscowhite,#3] (78.5703,208.6170) -- (281.0743,208.6170) -- (281.0743,257.3670) -- (78.5703,257.3670) -- (78.5703,208.6170) -- cycle;
+        \path[draw=ciscowhite,#3] (250.0980,146.1130) -- (280.0980,146.1130) -- (280.0980,186.1130) -- (250.0980,186.1130) -- (250.0980,146.1130) -- cycle;
+        \path[draw=ciscowhite,#3] (319.9610,266.6050) -- (369.1020,315.7540);
+        \path[draw=ciscoblack,#4] (8.8438,25.4883) -- (71.3438,25.4883) -- (71.3438,262.9883) -- (8.8438,262.9883) -- (8.8438,25.4883) -- cycle;
+        \path[draw=ciscoblack,#4] (20.0938,251.1130) -- (60.0938,251.1130);
+        \path[draw=ciscoblack,#4] (20.0938,238.6130) -- (60.0938,238.6130);
+        \path[draw=ciscoblack,#4] (20.0938,226.1130) -- (60.0938,226.1130);
+        \path[draw=ciscoblack,#4] (20.0938,213.6130) -- (60.0938,213.6130);
+        \path[draw=ciscoblack,#4] (20.0938,201.1130) -- (60.0938,201.1130);
+        \path[draw=ciscoblack,#4] (20.0938,188.6130) -- (60.0938,188.6130);
+        \path[draw=ciscoblack,#4] (20.0938,176.1130) -- (60.0938,176.1130);
+        \path[draw=ciscoblack,#4] (20.0938,163.6130) -- (60.0938,163.6130);
+        \path[draw=ciscoblack,#4] (20.0938,151.1130) -- (60.0938,151.1130);
+        \path[draw=ciscoblack,#4] (20.0938,138.6130) -- (60.0938,138.6130);
+        \path[draw=ciscoblack,#4] (20.0938,126.1130) -- (60.0938,126.1130);
+        \path[draw=ciscoblack,#4] (20.0938,113.6130) -- (60.0938,113.6130);
+        \path[draw=ciscoblack,#4] (20.0938,101.1130) -- (60.0938,101.1130);
+        \path[draw=ciscoblack,#4] (20.0938,88.6133) -- (60.0938,88.6133);
+        \path[draw=ciscoblack,#4] (20.0938,76.1133) -- (60.0938,76.1133);
+        \path[draw=ciscoblack,#4] (20.0938,63.6133) -- (60.0938,63.6133);
+        \path[draw=ciscoblack,#4] (20.0938,51.1133) -- (60.0938,51.1133);
+        \path[draw=ciscoblack,#4] (20.0938,38.6133) -- (60.0938,38.6133);
+    }
+
+    \ciscoiconpath{10GE_FCoE}{#1}{#5}{#6}{#7}{
+        \path[fill=ciscoblue,#2] (306.3050,416.1680) -- (254.9650,367.4220) -- (5.9609,367.4220) -- (70.4648,416.1680) -- (306.3050,416.1680);
+        \path[fill=ciscoblue,#2] (5.9609,191.2890) -- (254.9649,191.2890) -- (254.9649,367.4220) -- (5.9609,367.4220) -- (5.9609,191.2890) -- cycle;
+        \path[fill=ciscoblue,#2] (301.2150,237.5310) -- (301.2150,413.6640) -- (253.4730,367.4220) -- (253.4730,191.2890) -- (301.2150,237.5310);
+        \path[fill=ciscoblue!60,#2!60] (5.9609,4.7188) -- (254.9649,4.7188) -- (254.9649,193.0277) -- (5.9609,193.0277) -- (5.9609,4.7188) -- cycle;
+        \path[fill=ciscoblue!80,#2!80] (301.2150,50.9570) -- (301.2150,239.2620) -- (253.4730,193.0270) -- (253.4730,4.7188) -- (301.2150,50.9570);
+        
+        \path[draw=ciscowhite,#3] (191.0780,336.9140) .. controls (198.4610,329.9180) and (178.1480,297.7930) .. (145.7270,265.1560) .. controls (113.2970,232.5310) and (81.0195,211.7380) .. (73.6367,218.7380) .. controls (66.2461,225.7380) and (86.5469,257.8750) .. (118.9800,290.5120) .. controls (151.4020,323.1450) and (183.6760,343.9260) .. (191.0780,336.9140) -- cycle;
+        \path[draw=ciscowhite,#3] (192.9340,218.9450) .. controls (185.9340,211.5550) and (153.7850,231.8520) .. (121.1560,264.2770) .. controls (88.5117,296.7110) and (67.7500,328.9840) .. (74.7422,336.3710) .. controls (81.7422,343.7620) and (113.8830,323.4490) .. (146.5080,291.0200) .. controls (179.1450,258.6090) and (199.9380,226.3130) .. (192.9340,218.9450) -- cycle;
+        \path[draw=ciscowhite,#3] (5.9609,4.7188) -- (254.9649,4.7188) -- (254.9649,193.0277) -- (5.9609,193.0277) -- (5.9609,4.7188) -- cycle;
+        \path[draw=ciscowhite,#3] (301.2150,50.9570) -- (301.2150,239.2620) -- (253.4730,193.0270) -- (253.4730,4.7188) -- (301.2150,50.9570) -- cycle;
+        \path[draw=ciscowhite,#3] (301.2150,237.5310) -- (301.2150,413.6640) -- (253.4730,367.4220) -- (253.4730,191.2890) -- (301.2150,237.5310) -- cycle;
+        \path[draw=ciscowhite,#3] (306.3050,416.1680) -- (254.9650,367.4220) -- (5.9609,367.4220) -- (70.4648,416.1680) -- (306.3050,416.1680) -- cycle;
+        \path[draw=ciscowhite,#3] (5.9609,191.2890) -- (254.9649,191.2890) -- (254.9649,367.4220) -- (5.9609,367.4220) -- (5.9609,191.2890) -- cycle;   
+        % Above
+        % Arrows
+        \path[fill=ciscowhite,#3] (107.3400,283.3400) -- (70.0547,283.3400) -- (70.0547,292.9530) -- (56.0000,278.7730) -- (70.0547,264.5780) -- (70.0547,274.1950) -- (107.3400,274.1950) -- (107.3400,283.3400);
+        \path[fill=ciscowhite,#3] (128.4020,253.1410) -- (128.4020,215.8630) -- (118.7850,215.8630) -- (132.9650,201.8130) -- (147.1640,215.8630) -- (137.5430,215.8630) -- (137.5430,253.1410) -- (128.4020,253.1410);
+        \path[fill=ciscowhite,#3] (128.4020,303.3280) -- (128.4020,340.6020) -- (118.7850,340.6020) -- (132.9650,354.6600) -- (147.1640,340.6020) -- (137.5430,340.6020) -- (137.5430,303.3280) -- (128.4020,303.3280);
+        \path[fill=ciscowhite,#3] (158.6090,274.1950) -- (195.8630,274.1950) -- (195.8630,264.5780) -- (209.9570,278.7730) -- (195.8630,292.9530) -- (195.8630,283.3400) -- (158.6090,283.3400) -- (158.6090,274.1950);
+        % Below
+        % Arrow Heads (fill)
+        \path[fill=ciscowhite,#3] (198.5590,173.1050) -- (198.5590,127.4410) -- (226.0780,149.3750) -- (198.5590,173.1050);
+        \path[fill=ciscowhite,#3] (65.9219,105.8010) -- (65.9219,151.4650) -- (38.4023,129.5310) -- (65.9219,105.8010);
+        \path[fill=ciscowhite,#3] (198.5590,90.6055) -- (198.5590,44.9336) -- (226.0780,66.8750) -- (198.5590,90.6055);
+        \path[fill=ciscowhite,#3] (65.9219,23.3008) -- (65.9219,68.9648) -- (38.4023,47.0313) -- (65.9219,23.3008);
+        % Arrow Lines
+        \path[draw=ciscowhite,#3] (122.1130,129.0820) -- (59.5352,129.0820);
+        \path[draw=ciscowhite,#3] (145.6410,149.4450) -- (214.8870,149.4450);
+        \path[draw=ciscowhite,#3] (122.1130,46.5820) -- (59.5352,46.5820);
+        \path[draw=ciscowhite,#3] (145.6410,66.9453) -- (214.8870,66.9453);
+        % circle
+        \path[fill=ciscoblack!30,#4] (148.2580,257.1090) .. controls (160.5700,265.7340) and (163.5590,282.6800) .. (154.9380,294.9880) .. controls (146.3130,307.3010) and (129.3590,310.2930) .. (117.0350,301.6800) .. controls (104.7420,293.0700) and (101.7540,276.0940) .. (110.3750,263.8010) .. controls (118.9800,251.4920) and (135.9410,248.4920) .. (148.2580,257.1090);
+    }
+
+    \ciscoiconpath{router}{#1}{#5}{#6}{#7}{
+        \path[fill=ciscoblue,#2] (369.8550,178.2810) .. controls (369.8550,138.7770) and (287.5120,106.7580) .. (185.9300,106.7580) .. controls (84.3477,106.7580) and (2.0000,138.7770) .. (2.0000,178.2810) -- (2.0000,73.5156) .. controls (2.0000,34.0156) and (84.3477,1.9922) .. (185.9300,1.9922) .. controls (287.5120,1.9922) and (369.8550,34.0156) .. (369.8550,73.5156) -- (369.8550,178.2810);
+        \path[fill=ciscoblue,#2!70] (185.9300,106.7580) .. controls (287.5120,106.7580) and (369.8550,138.7770) .. (369.8550,178.2810) .. controls (369.8550,217.7930) and (287.5120,249.8050) .. (185.9300,249.8050) .. controls (84.3477,249.8050) and (2.0000,217.7930) .. (2.0000,178.2810) .. controls (2.0000,138.7770) and (84.3477,106.7580) .. (185.9300,106.7580);
+        \path[draw=ciscowhite,#3] (369.8550,178.2810) .. controls (369.8550,138.7770) and (287.5120,106.7580) .. (185.9300,106.7580) .. controls (84.3477,106.7580) and (2.0000,138.7770) .. (2.0000,178.2810) -- (2.0000,73.5156) .. controls (2.0000,34.0156) and (84.3477,1.9922) .. (185.9300,1.9922) .. controls (287.5120,1.9922) and (369.8550,34.0156) .. (369.8550,73.5156) -- (369.8550,178.2810) -- cycle;
+        \path[draw=ciscowhite,#3] (185.9300,106.7580) .. controls (287.5120,106.7580) and (369.8550,138.7770) .. (369.8550,178.2810) .. controls (369.8550,217.7930) and (287.5120,249.8050) .. (185.9300,249.8050) .. controls (84.3477,249.8050) and (2.0000,217.7930) .. (2.0000,178.2810) .. controls (2.0000,138.7770) and (84.3477,106.7580) .. (185.9300,106.7580) -- cycle;
+        \path[fill=ciscowhite,#3] (143.9260,206.2500) -- (159.1090,183.4690) -- (101.6880,170.1950) -- (114.2380,180.6450) -- (25.4883,195.8130) -- (47.7539,212.5000) -- (133.3910,198.0000) -- (143.9260,206.2500);
+        \path[fill=ciscowhite,#3] (224.7270,151.0080) -- (214.3630,174.4920) -- (266.1600,184.8440) -- (257.1800,176.7970) -- (343.5080,162.0510) -- (322.7930,145.4800) -- (236.9800,161.5940) -- (224.7270,151.0080);
+        \path[fill=ciscowhite,#3] (196.4060,218.6910) -- (254.4260,234.5700) -- (255.1050,209.7070) -- (240.6050,212.4730) -- (212.2970,188.9840) -- (185.2730,192.9300) -- (214.5040,215.8980) -- (196.4060,218.6910);
+        \path[fill=ciscowhite,#3] (171.5430,129.5900) -- (116.3010,119.2380) -- (114.2300,144.7850) -- (130.1050,141.3400) -- (160.5200,167.3050) -- (187.4340,162.7540) -- (154.9730,134.4340) -- (171.5430,129.5900);
+    }
+
+    \ciscoiconpath{}{#1}{#5}{#6}{#7}{
+        [#2]
+        [#3]
+        [#4]
+    }
+
+    \ciscoiconpath{}{#1}{#5}{#6}{#7}{
+        [#2]
+        [#3]
+        [#4]
+    }
+
+    \ciscoiconpath{}{#1}{#5}{#6}{#7}{
+        [#2]
+        [#3]
+        [#4]
+    }
+
+}
